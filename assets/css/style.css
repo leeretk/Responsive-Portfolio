@@ -1,0 +1,253 @@
+/** * Homework biography * **/
+
+
+/** * HEADER * **/
+
+header {
+    background: #ffffff;
+}
+
+.divNameHeader {
+    float:left;
+    text-align: center;
+    margin-left: 5%;
+        }
+
+.divHyperlinks {
+    padding-top: 10px;
+    float:right;
+    color: #777777;
+    font-size: 26px;
+      }
+
+.divHeaderUnderline {  
+    border-width: 1px;
+    border-bottom: 2px solid lightgray;
+}      
+
+/** * HEADER NAVIGATION * **/
+
+nav {
+    margin: auto;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+a { text-decoration: none;
+    padding: 10px;
+    color: #777777
+    }
+
+/** * FOOTER * **/
+            
+footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        font-size: 16px;
+        color: #eee;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        background-color: #666666;
+        border-top: solid;
+        border-color: #4aaaa5;
+        border-width: 10px;
+    }
+
+/** * HEADING 1 - GREEN BOX - KAMY LEERET * **/
+
+h1 {
+    padding: 25px ;
+    font-size: 28px;
+    color: #eee;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #4aaaa5;
+      }
+
+/** * HEADING 2 - ABOUT ME, PORTFOLIO, CONTACTS * **/
+
+h2 {
+    color: #4aaaa5;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
+ 
+/** * HEADING 3 - PICTURE HEADINGS * **/
+
+h3 {
+    background-color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+          }
+
+.centered {
+    position: relative;
+    bottom: 80px;
+    width: 100%;
+             }
+       
+
+/** * BODY * **/    
+
+.content { max-width: 960px;
+margin: auto}
+
+body {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:200%;
+    color: #777777;
+    background: #efeee7;
+    overflow: hidden;
+    margin-bottom: 30px;
+     }  
+
+/** * CONTAINER BIO ABOUT ME, PORTFOLIO, CONTACT;* position: relative;**/
+
+/*
+* I need to figure out how to make the around the biography to move to the center of the page.
+*/
+
+.containerBio {
+    margin-top: 20px;
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color:lightgray ;
+    padding: 30px;
+    width: 960px;
+        }
+
+.bio-image {
+    width: 200px;
+    height: 200px;
+    float:left;
+    margin-right: 20px;
+          }
+
+/** * PORTFOLIO CONTAINERS * **/   
+
+.portfolioContainer {
+    margin-top: 20px;
+    float: left;
+    border-style: solid;
+    border-width: 2px;
+    border-color:lightgray ;
+    padding: 20px;
+    width: 960px;
+              }
+     
+
+/** * CONTAINER IMAGES, AND TEXT BANNER * **/
+
+/** I need to figure out how to get the images to wrap
+I have tried everything I can think of and I either get this
+or the images are all over the page
+https://www.w3schools.com/css/css3_flexbox.asp#flex-wrap
+
+*/
+
+.boxPicturesContainer {  
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 0 80px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+            }     
+            
+.flex-container {
+    margin: 10px;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: ffffff;
+              }
+              
+.flex-container > div {
+    text-align: center;
+    font-size: 30px;
+              }    
+                  
+.portfolioImages {
+    width: 250px;
+    height: 200px;
+  }
+
+.column { 
+    float: left;
+    padding: 20px;
+    column-count: 1;
+            }   
+
+.row {padding: 40px;
+    display: flex; }
+        
+        
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+            }
+        
+/* clear floats after the columns*/
+      
+/** * CONTACT * **/    
+
+/** * CONTACT FORM * **/   
+
+/*
+* I need to make the box centered on the page.
+* I need to make the fields inside the box stretch to the edges.
+* I need to make the message box responsive to text.
+*/
+
+input {
+    size: 100%;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 920px;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: thin;
+    padding: 4px
+    }
+
+button { 
+    width: 100px; 
+    background-color: teal;
+    font-family:  Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+button:hover { background-color: darkgrey;}
+
+textarea {
+    size: 100%;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 920px;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: thin;
+    padding: 4px;
+}
